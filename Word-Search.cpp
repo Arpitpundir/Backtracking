@@ -23,7 +23,7 @@ public:
         vis.resize(n, vector<bool>(m, false));
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(existRecursive(0,0,vis,board, word, 0)) return true;
+                if(existRecursive(i,j,vis,board, word, 0)) return true;
             }
         }
         return false;
